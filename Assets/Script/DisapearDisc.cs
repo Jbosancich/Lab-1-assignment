@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine;
-
 public class PortalDisappearance : MonoBehaviour
 {
     // Optional: time delay before the portal starts to disappear
