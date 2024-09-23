@@ -13,6 +13,22 @@ public class MoveObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       transform.Translate(Vector3.right * Time.deltaTime);
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(Vector3.forward * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate( -1 * Vector3.right * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(-1 * Vector3.forward * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(Vector3.right * Time.deltaTime);
+        }
     }
+    
 }
